@@ -3,25 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS</title>
+    <title>CSS Introduction</title>
     <style>
         div, span {
             color: red;
-            background-color: yellow;
+            background-color: rgb(227, 227, 202);
         }
     </style>
 </head>
 <body>
     <div>
-        Hey I am harry and today I am in CSS Mood
+        CSS is used to style and layout web pages. It allows you to apply styles to HTML elements, control their appearance, and manage the layout of a webpage
     </div>
 
     <div>
-        I am good
+        Key CSS Concepts:
     </div>
     <span>
-        I am also good
+        Selectors: Determine which HTML elements are affected by the styles.
     </span>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores tempora possimus molestiae doloremque quod. Recusandae laborum, laudantium cupiditate magni nostrum sit repellat dolorum ipsa vero aspernatur saepe autem, quod obcaecati, maxime quaerat! Praesentium culpa ipsam quasi odio sapiente nam, animi velit corporis nostrum!</p>
+    <p>
+        <ul>
+            <li>Element Selector: Selects all elements of a given type.
+            <code>
+                p {
+                    color: blue;
+                }
+            </code>
+            </li>
+        </ul>
+        <ul>
+            <li>Class Selector: Selects all elements with a specific class.
+            <code>
+                .highlight {
+                    background-color: yellow;
+                }
+            </code>
+            </li>
+        </ul>
+        <ul>
+            <li>ID Selector: Selects a single element with a specific ID.
+            <code>
+                #main {
+                    max-width: 800px;
+                }
+            </code>
+            </li>
+        </ul>
+        <ul>
+            <li>Attribute Selector: Selects elements based on an attribute or attribute value
+            <code>
+                a[target="_blank"] {
+                    color: red;
+                }
+                
+            </code>
+            </li>
+        </ul>
+    </p>
 </body>
 </html>
