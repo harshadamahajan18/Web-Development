@@ -12,3 +12,68 @@
     <span class="red"></span>
 </body>
 </html>
+
+<!-- ID Attribute:
+
+Definition: The id attribute is used to uniquely identify an HTML element. It should be unique within a page.
+
+Syntax: id="uniqueIdentifier"
+
+Use Cases: Targeting specific elements with CSS, JavaScript, or linking to specific sections within a page.
+
+Example:
+    <div id="header">This is the header</div>
+
+<style>
+    #header {
+        background-color: lightblue;
+    }
+</style>
+
+<script>
+    document.getElementById("header").style.color = "blue";
+</script>
+
+Class Attribute:
+
+Definition: The class attribute is used to assign one or more class names to an HTML element. Multiple elements can share the same class.
+
+Syntax: class="className" (multiple classes can be separated by spaces)
+
+Use Cases: Applying styles to multiple elements with CSS, selecting groups of elements with JavaScript.
+
+Example:
+    <div class="box">Box 1</div>
+<div class="box">Box 2</div>
+
+<style>
+    .box {
+        border: 1px solid black;
+        padding: 10px;
+    }
+</style>
+
+<script>
+    let boxes = document.getElementsByClassName("box");
+    for (let i = 0; i < boxes.length; i++) {
+        boxes[i].style.backgroundColor = "yellow";
+    }
+</script>
+
+Key Differences:
+
+1. Uniqueness:
+
+ID: Must be unique within a document.
+Class: Can be reused on multiple elements.
+
+2. Selector Specificity:
+
+ID: Higher specificity in CSS (#id).
+Class: Lower specificity in CSS (.class).
+
+3.Usage:
+
+ID: Best used for unique elements that need to be targeted specifically.
+Class: Best used for grouping multiple elements that share common styles or behaviors.
+-->
