@@ -18,11 +18,67 @@
     <h1>Three ways to add CSS to HTML</h1>
     <div>
         <ol>
-            <li>Inline CSS</li>
-            <li>Internal CSS</li>
-            <li>External CSS</li>
+            <li>Inline CSS(Highest Priority)</li>
+            <li>Internal CSS(Next Priority)</li>
+            <li>External CSS(Lowest Priority)</li>
         </ol>
     </div>
-    <p>Everyone is good in some way or the other. Does this even make any sense?</p>
+    <p>External CSS is used everywhere.This is important stylesheet.</p>
 </body>
 </html>
+
+<!-- 
+1. Inline CSS:
+
+Definition: CSS styles are applied directly within an HTML element using the style attribute.
+
+Usage: Suitable for quick, one-off styles or for testing.
+
+<p style="color: blue; font-size: 18px;">This is an inline styled paragraph.</p>
+
+2. Internal CSS:
+
+Definition: CSS styles are defined within a <style> tag inside the <head> section of an HTML document.
+
+Usage: Useful for applying styles to a single HTML document.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+</body>
+</html>
+
+3. External CSS:
+
+Definition: CSS styles are written in a separate .css file and linked to the HTML document using the <link> tag.
+
+Usage: Best for applying styles across multiple HTML documents to maintain consistency and reusability.
+
+Example:
+HTML File:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p>This is a sample paragraph to demonstrate external CSS styling.</p>
+</body>
+</html>
+
+styles.css:
+p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+-->
